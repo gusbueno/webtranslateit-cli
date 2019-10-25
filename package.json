@@ -1,0 +1,26 @@
+{
+  "name": "webtranslateit-cli",
+  "version": "1.0.0",
+  "description": "Download your translation files to your project quickly",
+  "main": "./bin/wti.js",
+  "bin": {
+    "wti": "./bin/wti.js"
+  },
+  "scripts": {
+    "standard": "standard 'src/*.js' 'bin/*.js'"
+  },
+  "pre-commit": [
+    "standard"
+  ],
+  "repository": "https://github.com/gusbueno/webtranslateit-cli.git",
+  "author": "Gustavo Bueno <gustavo.bueno89@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "standard": "^14.3.1"
+  }
+}
