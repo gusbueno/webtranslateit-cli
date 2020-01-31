@@ -12,12 +12,12 @@ Download your translation files from [webtranslateit](https://webtranslateit.com
 
 
 ## INSTALATION
-Webtranslateit CLI requires [Node.js] version 8 or above. To install, run the following command from your terminal
+Webtranslateit CLI requires [Node.js](https://nodejs.org/en/) version 8 or above. To install, run the following command from your terminal
 ```
 npm install webtranslateit-cli -g
 ```
 
-### ADD IT TO YOUR PROJECT
+### ADD IT INTO YOUR PROJECT
 You can also install it as dev dependency in your project
 ```
 npm install -D webtranslateit-cli
