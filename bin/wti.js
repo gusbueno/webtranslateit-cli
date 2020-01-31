@@ -6,6 +6,6 @@ const pkg = require('../package.json')
 
 program
   .version(pkg.version, '-v, --version')
-  .command('run', 'retrive translations')
+  .command('run', 'retrieve translations')
   .alias('r')
   .parse(process.argv)

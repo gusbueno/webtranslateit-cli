@@ -12,8 +12,11 @@
   "pre-commit": [
     "standard"
   ],
+  "engines": {
+    "node": ">=8.12.0"
+  },
   "repository": "https://github.com/gusbueno/webtranslateit-cli.git",
-  "author": "Gustavo Bueno <gustavo.bueno89@gmail.com>",
+  "author": "Gustavo Bueno",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
