@@ -14,9 +14,6 @@ program
 
 if (!program.apiKey) {
   logError('missing required argument --api-key')
-}
-
-if (!program.apiKey) {
   process.exit(1)
 }
 
@@ -25,8 +22,16 @@ if (!program.apiKey) {
   fs.stat(outputPath, (err, stats) => {
     if (stats && stats.isDirectory()) {
       logInfo(`Your translation files are gonna be downloaded in: ${outputPath}`)
+
       logInfo('Retrieving translations...')
       https.get(`https://webtranslateit.com/api/projects/${program.apiKey}/zip_file`, res => {
+        const { statusCode } = res
+
+        if (statusCode !== 200) {
+          logError(`Error on downloading the translations file with status code: ${statusCode}`)
+          process.exit(1)
+        }
+
         const fileName = `temp_translations_${Date.now()}.zip`
         logSuccess('Downloaded!', `Translations retrieved successfully!: ${fileName}`)
         const file = fs.createWriteStream(fileName)
@@ -51,10 +56,13 @@ if (!program.apiKey) {
                   \\_/\\_/ \\___|_.__/ \\__|_|  \\__,_|_| |_|___/_|\\__,_|\\__\\___|_|\\__|     \\___|_|_|
                 `)
                 process.exit()
-              }, e => console.log('error: ', e))
+              }, e => {
+                logError(e)
+                process.exit(1)
+              })
           })
       }).on('error', e => {
-        console.log(e)
+        logError(e)
         process.exit(1)
       })
     } else {
