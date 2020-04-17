@@ -1350,9 +1350,10 @@ uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
 
-unzipper@^0.10.7:
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/unzipper/-/unzipper-0.10.7.tgz#ed5d72d12337f66f790d42fef47eb9f9de0a0906"
+unzipper@^0.10.10:
+  version "0.10.10"
+  resolved "https://registry.yarnpkg.com/unzipper/-/unzipper-0.10.10.tgz#d82d41fbdfa1f0731123eb11c2cfc028b45d3d42"
+  integrity sha512-wEgtqtrnJ/9zIBsQb8UIxOhAH1eTHfi7D/xvmrUoMEePeI6u24nq1wigazbIFtHt6ANYXdEVTvc8XYNlTurs7A==
   dependencies:
     big-integer "^1.6.17"
     binary "~0.3.0"

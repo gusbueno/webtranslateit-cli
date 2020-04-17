@@ -21,7 +21,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
-    "unzipper": "^0.10.7"
+    "unzipper": "^0.10.10"
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
