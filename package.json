@@ -19,7 +19,7 @@
   "author": "Gustavo Bueno",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^4.0.0",
     "commander": "^3.0.2",
     "unzipper": "^0.10.7"
   },
