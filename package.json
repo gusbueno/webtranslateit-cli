@@ -1,6 +1,6 @@
 {
   "name": "webtranslateit-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Download your translation files to your project quickly",
   "main": "./bin/wti.js",
   "bin": {
@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
-    "commander": "^3.0.2",
+    "commander": "^5.1.0",
     "unzipper": "^0.10.7"
   },
   "devDependencies": {
