@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.0.0",
-    "commander": "^5.1.0",
+    "commander": "^6.2.0",
     "unzipper": "^0.10.7"
   },
   "devDependencies": {
